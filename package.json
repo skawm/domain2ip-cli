@@ -1,0 +1,25 @@
+{
+  "name": "domain2ip-cli",
+  "version": "1.0.0",
+  "description": "domain2ip-cli",
+  "main": "d2ip.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skawm/domain2ip-cli.git"
+  },
+  "keywords": [
+    "Domain2ip"
+  ],
+  "author": "Skawm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skawm/domain2ip-cli/issues"
+  },
+  "homepage": "https://github.com/skawm/domain2ip-cli#readme",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}
