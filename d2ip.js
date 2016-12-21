@@ -7,10 +7,12 @@ let reg = new RegExp('[^a-z0-9-.]', 'i');
 if (process.argv[2] === 'help') { //help command
     console.log(chalk.green('d2ip') + ' is designed to be used as fast as possible')
     console.log(chalk.blue('usage: node d2ip domain.com'));
-    console.log(chalk.yellow('more at github.com/skawm/domain2ip-cli'));
+    console.log(chalk.red('Please read README at github.com/skawm/domain2ip-cli before using this software'));
     process.exit()
 }
 
+
+console.log('resolving IPs at ' + chalk.green(dns.getServers()[0]) + ' (custom dns will be added soon)');
 if (reg.test(domain)) {
     //invalid characters found
     console.log(chalk.bold.red('Please enter a valid domain name'));
